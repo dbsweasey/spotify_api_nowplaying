@@ -1,0 +1,19 @@
+{
+  "name": "now_playing_server",
+  "version": "1.0.0",
+  "description": "A server to periodically request my Spotify \"Now Playing\" and server to a frontend",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "David Sweasey",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.13.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "ejs": "^3.1.10",
+    "express": "^5.2.1"
+  }
+}
