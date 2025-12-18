@@ -5,15 +5,7 @@ const cors = require("cors");
 const { access } = require("fs");
 
 const app = express();
-app.use(
-  cors({
-    origin: [
-      "http://192.168.1.126:5000",
-      "https://personal-webpage-nine-chi.vercel.app/",
-    ],
-    credentials: false,
-  })
-);
+app.use(cors());
 
 const PORT = process.env.PORT || 8888;
 
