@@ -5,7 +5,12 @@ const cors = require("cors");
 const { access } = require("fs");
 
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: ["http://192.168.1.126:5000"],
+    credentials: false,
+  })
+);
 
 const PORT = process.env.PORT || 8888;
 
