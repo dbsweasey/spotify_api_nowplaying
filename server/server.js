@@ -68,6 +68,7 @@ app.get("/currently-playing", async (req, res) => {
           .join(", "),
         album: response.data.item.album.name,
         albumImage: response.data.item.album.images[0]?.url,
+        url: response.data.item.external_urls.spotify,
       },
     });
     console.log("Fetched currently playing track");
